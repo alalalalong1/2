@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/18a1c65550.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <title>Блог</title>
+</head>
+
+<body>
+    <!-- Оболочка grid-контейнер -->
+    <div class="wrapper">
+        <!-- шапка grid-элемент -->
+        <header class="header">
+            <div class="header__container">
+                <!-- флекс -->
+                <div class="header__body">
+                    <div class="header__body__top__wrap">
+                        <a href="Index.html" class="header__logo">
+                            <img src="img/logo.png" alt="Логотип Good Day">
+                        </a>
+                        <div class="header__body__top__menu__text">
+                            <h3 class="logo__text">GOOD DAY - <br> повод порадовать близких!</h3>
+                            <a href="address.html" class="header__link__reminder"> Напомните мне про ее(его) ДР!</a>
+                        </div>
+                        <ul class="header__menu__top__contacts">
+                            <li><i class="fas fa-calendar-alt"></i>пн-вс с 8.00 до 21.00</li>
+                            <li><i class="fas fa-mobile-alt"></i> +375(29) 111-11-11</li>
+                            <li><a href="https://www.google.ru/maps/dir//%D0%9F%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9+9,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.9086367,27.544218,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46dbcf92d3b4d975:0x1ad067aa1fa09f3b!2m2!1d27.5485954!2d53.9086305"
+                                    target="_blank"><i class="fas fa-map-marked-alt"></i> пр-т
+                            Победителей, 9<br> г. Минск, 220000
+                        </a></li>
+                            <li><a href="#"><i class="fas fa-phone-alt"></i> Заказать звонок</a></li>
+                        </ul>
+                        <div class="header__body__top__menu__links">
+                            <nav class="header__menu__top">
+                                <ul class=" social_media">
+                                    <li>
+                                        <a href="https://viber.com" target="_blank" title="Мы в Viber" class="social-icon social-viber">
+                                            <i class="fab fa-viber"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://telegram.com" target="_blank" class="social-icon social-telegram" title="Мы в Telegram">
+                                            <i class="fab fa-telegram-plane"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com" target="_blank" class="social-icon social-instagram" title="Мы в Instagram">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.vk.com" target="_blank" class="social-icon social-vk" title="Мы в VK">
+                                            <i class="fab fa-vk"></i>
+                                        </a>
+                                    </li>
+                                    <li><a href="#/my-account/" class="account" title="Вход в личный кабинет"><i
+                                        class="fas fa-user"></i>
+                                </a></li>
+                                </ul>
+                            </nav>
+                            <form class="header__form__search">
+                                <input type="text" placeholder="Поиск товара">
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--  <div class="header__body__bottom__wrap"></div>  -->
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu ">
+                        <ul class="header__list">
+                            <li><a href="Index.html" class="header__link" title="Главная">Главная</a></li>
+                            <li class="dropdown__menu"><a href="Catalog.html" class="header__link" title="Каталог">Каталог</a>
+                                <ul class="dropdown__menu__submenu">
+                                    <li>
+                                        <a href="Catalog.html" title="Весь ассортимент">Весь ассортимент</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catalog_flowers.html" title="Цветы">Цветы</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catalog_gifts.html" title="Подарки">Подарки</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catalog_cakes.html" title="Торты">Торты</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="payment.html" class="header__link" title="Оплата">Оплата</a></li>
+                            <li><a href="delivery.html" class="header__link" title="Доставка">Доставка</a></li>
+                            <li><a href="reviews.html" class="header__link" title="Отзывы">Отзывы</a></li>
+                            <li><a href="news.html" class="header__link active__block" title="Новости">Новости</a></li>
+                            <li><a href="address.html" class="header__link" title="Контакты">Контакты</a></li>
+                            <li><a href="basket.html" class="header__link" title="Корзина">Корзина <!-- <i class="fas fa-cart-plus"></i> --></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Контент (grid-элемент + grid-контейнер) -->
+        <main class="main news__main">
+            <nav class="breadcrumb">
+                <ul class="breadcrumb__list">
+                    <li>
+                        <a href="Index.html" class="breadcrumb__link">Главная</a>
+                    </li>
+                    <li>
+                        <a href="news.html" class="breadcrumb__link">Блог</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Контент (grid-элемент + grid-контейнер) -->
+            <section class="content news__content">
+                <h1 class="news__title">Блог</h1>
+                <div class="news__content__block__1">
+                    <h2><a href="#">Цветочные композиции в шляпной коробке: как ухаживать и чем они отличаются от стандартного букета</a></h2>
+                    <img src="img/content__blog__news1.jpg" alt="Цветочные композиции в шляпной коробке: как ухаживать и чем они отличаются от стандартного букета">
+                    <div class="news__content__block__text">
+                        <p>Цветы в шляпных коробках появились несколько лет назад и буквально взорвали рынок флористики, став трендом №1.Кроме того, такая композиция – лучшие решение, если цветочный подарок должен пережить долгую дорогу, ведь в шляпной коробке
+                            находится флористическая губка, так что цветы уже имеют доступ к воде. Никаких хлопот с транспортировочной емкостью.</p>
+                        <a href="#" title="Читать дальше">Читать дальше</a>
+                    </div>
+                </div>
+                <div class="news__content__block__2">
+                    <h2><a href="#">Букеты для мужчин</a></h2>
+
+                    <img src="img/content__blog__news3.jpg" alt="Букеты для мужчин">
+                    <div class="news__content__block__text">
+                        <p>Дарить цветы нужно правильно. Особенно, если это касается сильного пола. Многим не привычно это делать, но некоторые поводы и мужчины достойны того, чтобы вместе с подарком преподнести букет. Самые распространенные цветы, которые
+                            входят в букет для мужчин - гвоздики. Их можно заказать, купить в Беларуси для выражения любви, благодарности, уважения. Они символ стойкости, силы, победы. У нас они всегда в наличии. Однако букет для мужчины можно сделать
+                            более креативным, современным, интересным. Можно заказать композицию из орхидей, лилий, гербер, тюльпанов, ирисов. </p>
+                        <a href="#" title="Читать дальше">Читать дальше</a>
+                    </div>
+                </div>
+                <div class="news__content__block__3">
+                    <h2><a href="#">Сохранить букет: советы и проверенные способы, чтобы букет простял дольше.</a></h2>
+                    <img src="img/content__blog__news2.jpg" alt="Срезанные цветы не любят перепадов температуры, поэтому перед тем, как занести в дом,
+                                    их нужно на несколько минут положить в прохладном месте">
+                    <div class="news__content__block__text">
+                        <p>Срезанные цветы не любят перепадов температуры, поэтому перед тем, как занести в дом, их нужно на несколько минут положить в прохладном месте. Букет цветов стоит поставить в месте, отдаленном от солнечных лучей и обогревательных
+                            приборов. Перед тем, как в вазу налить воду, ее нужно тщательно сполоснуть или помыть с мылом. Нельзя ставить цветы в холодную воду! Она должна быть комнатной температуры и отстоянной (или кипяченной).</p>
+                        <a href="#" title="Читать дальше">Читать дальше</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer (grid-элемент + grid-контейнер) -->
+        <footer class="footer">
+            <a href="Index.html" class="footer__logo">
+                <img src="img/logo.png" alt="Логотип Good Day">
+            </a>
+            <div class="footer__text">
+                <div class="footer__text__columns">
+                    <div class="footer__text__column__1">
+                        <ul class="column__1__list column__list">
+                            <li>УЗНАТЬ БОЛЬШЕ</li>
+                            <li><a href="address.html">Связаться с нами</a></li>
+                            <li><a href="reviews.html">Отзывы</a></li>
+                            <li><a href="#">Купоны и промо-акции</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__text__column__2">
+                        <ul class="column__2__list column__list">
+                            <li>РЕКОМЕНДАЦИИ</li>
+                            <li><a href="#">FAQS</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Условия и положения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__text__column__3 column__list">
+                        <ul class="column__3__list">
+                            <li>НАШИ КОНТАКТЫ</li>
+                            <li><a href="mailto:gooddaygifts@gmail.com" target="_blank"><i class="fas fa-envelope"></i>
+                                    email:
+                                    goodday@gmail.com</a></li>
+                            <li><a href="tel:+375XXXXXXX" target="_blank"><i class="fas fa-mobile-alt"></i> tel:
+                                    +375291111111</a></li>
+                            <li><a href="https://www.google.ru/maps/dir//%D0%9F%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9+9,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.9086367,27.544218,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46dbcf92d3b4d975:0x1ad067aa1fa09f3b!2m2!1d27.5485954!2d53.9086305"
+                                    target="_blank"><i class="fas fa-map-marked-alt"></i> пр-т
+                                    Победителей, 9 г. Минск, Республика Беларусь 220000
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <p><a href="Index.html">GOOD DAY</a> <i class="fa fa-copyright"></i> 2021 ALL RIGHTS RESERVED
+                </p>
+            </div>
+            <div class="to__top__button">
+                <a class="to__top__button__link" href="#top" title="Вернуться наверх"><i
+                        class="fas fa-arrow-circle-up"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

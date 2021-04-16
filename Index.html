@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/18a1c65550.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <script src="js/modernizr-custom.js"></script>
+    <title>GOOD DAY - магазин подарков и цветов</title>
+</head>
+
+<body>
+    <!-- Оболочка grid-контейнер -->
+    <div class="wrapper">
+        <!-- шапка grid-элемент -->
+        <header id="header" class="header">
+            <div class="header__container">
+                <!-- флекс -->
+                <div class="header__body">
+                    <div class="header__body__top__wrap">
+                        <a href="Index.html" class="header__logo">
+                            <img src="img/logo.png" alt="Логотип Good Day">
+                        </a>
+                        <div class="header__body__top__menu__text">
+                            <h3 class="logo__text">GOOD DAY - <br> повод порадовать близких!</h3>
+                            <a href="address.html" class="header__link__reminder"> Напомните мне про ее(его) ДР!</a>
+                        </div>
+                        <ul class="header__menu__top__contacts">
+                            <li><i class="fas fa-calendar-alt"></i>пн-вс с 8.00 до 21.00</li>
+                            <li><i class="fas fa-mobile-alt"></i> +375(29) 111-11-11</li>
+                            <li><a href="https://www.google.ru/maps/dir//%D0%9F%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9+9,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.9086367,27.544218,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46dbcf92d3b4d975:0x1ad067aa1fa09f3b!2m2!1d27.5485954!2d53.9086305"
+                                    target="_blank"><i class="fas fa-map-marked-alt"></i> пр-т
+                            Победителей, 9<br> г. Минск, 220000
+                        </a></li>
+                            <li><a href="#"><i class="fas fa-phone-alt"></i> Заказать звонок</a></li>
+                        </ul>
+                        <div class="header__body__top__menu__links">
+                            <nav class="header__menu__top">
+                                <ul class=" social_media">
+                                    <li>
+                                        <a href="#" target="_blank" title="Мы в Viber" class="social-icon social-viber">
+                                            <i class="fab fa-viber"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" class="social-icon social-telegram" title="Мы в Telegram">
+                                            <i class="fab fa-telegram-plane"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" class="social-icon social-instagram" title="Мы в Instagram">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" class="social-icon social-vk" title="Мы в VK">
+                                            <i class="fab fa-vk"></i>
+                                        </a>
+                                    </li>
+                                    <li><a href="#/my-account/" class="account" title="Вход в личный кабинет"><i
+                                        class="fas fa-user"></i>
+                                </a></li>
+                                </ul>
+                            </nav>
+                            <form class="header__form__search">
+                                <input type="text" placeholder="Поиск товара">
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu ">
+                        <ul class="header__list">
+                            <li><a href="Index.html" class="header__link active__block" title="Главная">Главная</a></li>
+                            <li class="dropdown__menu"><a href="Catalog.html" class="header__link" title="Каталог">Каталог</a>
+                                <ul class="dropdown__menu__submenu">
+                                    <li>
+                                        <a href="Catalog.html" title="Весь ассортимент">Весь ассортимент</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catalog_flowers.html" title="Цветы">Цветы</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catalog_gifts.html" title="Подарки">Подарки</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catalog_cakes.html" title="Торты">Торты</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="payment.html" class="header__link" title="Оплата">Оплата</a></li>
+                            <li><a href="delivery.html" class="header__link" title="Доставка">Доставка</a></li>
+                            <li><a href="reviews.html" class="header__link" title="Отзывы">Отзывы</a></li>
+                            <li><a href="news.html" class="header__link" title="Новости">Новости</a></li>
+                            <li><a href="address.html" class="header__link" title="Контакты">Контакты</a></li>
+                            <li><a href="basket.html" class="header__link" title="Корзина">Корзина <!-- <i class="fas fa-cart-plus"></i> --></a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+        <!-- Контент (grid-элемент + grid-контейнер) -->
+        <main id="top" class="main">
+            <!-- Контент (grid-элемент + grid-контейнер) -->
+            <section class="content">
+                <div class="content__slider">
+                    <div class="content__slider__pic">
+                        <img class="slide-1-img" src="img/slide__pic__1.jpg" alt="Получи секретный промокод на скидку 5%">
+                        <div class="slide-1-text">
+                            <h3>Получи секретный промокод на скидку 5% в нашем Instagram</h3>
+                            <a class="content__slider__button" href="https://www.instagram.com" title="Получить скидку" target="_blank">Получить скидку</a>
+                        </div>
+                    </div>
+                    <div class="content__slider__pic">
+                        <img class="slide-2-img" src="img/slide__pic__2.jpg" alt="Подарочные букеты">
+                        <div class="slide-2-text">
+                            <h3>Подарочные букеты</h3>
+                            <a class="content__slider__button" href="#" title="Перейти в раздел" target="_blank">Перейти в раздел</a>
+                        </div>
+                    </div>
+                    <div class="content__slider__pic">
+                        <img class="slide-3-img" src="img/slide__pic__3.jpg" alt="Выбрать
+                        подарок">
+                        <div class="slide-3-text">
+                            <h3>ДОСТАВКА С 9.00 ДО 20.00</h3>
+                            <p>БЕЗ ВЫХОДНЫХ</p>
+                            <a class="content__slider__button" href="#" title="Выбрать
+                                подарок" target="_blank">Выбрать
+                                подарок</a>
+                        </div>
+                    </div>
+                    <div class="content__slider__pic">
+                        <img class="slide-4-img" src="img/slide__pic__4.jpg" alt="ВРЕМЯ РАБОТЫ">
+                        <div class="slide-4-text">
+                            <h3>ОНЛАЙН-ОПЛАТА<br> С 8.00 ДО 21.00</h3>
+                            <a class="content__slider__button" href="#" title="Выбрать подарок" target="_blank">Выбрать подарок
+                    </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Контент галерея (grid-элемент + grid-контейнер) -->
+                <div class="content__gallery">
+                    <div class="content__gallery__item content__gallery__item__big">
+                        <a href="Catalog.html" class="content__gallery__item__image">
+                            <img src="img/content__gallery__big.jpg" alt="Каталог">
+                            <span>Каталог</span>
+                        </a>
+                    </div>
+                    <div class="content__gallery__item content__no__show">
+                        <a href="Catalog_gifts.html" class="content__gallery__item__image ">
+                            <img src="img/content__gallery__gifts.png" alt="Подарки">
+                            <span>Подарки</span>
+                        </a>
+                    </div>
+                    <div class="content__gallery__item content__no__show">
+                        <a href="Catalog_cakes.html" class="content__gallery__item__image ">
+                            <img src="img/content__gallery__cakes.jpg" alt="Торты">
+                            <span>Торты</span>
+                        </a>
+                    </div>
+                    <div class="content__gallery__item content__gallery__item__horizontal content__no__show">
+                        <a href="Catalog_flowers.html" class="content__gallery__item__image">
+                            <img src="img/content__gallery__flowers.jpg" alt="Цветочные композиции">
+                            <span>Цветочные композиции</span>
+                        </a>
+                    </div>
+                </div>
+                <!--Гайд (grid-элемент + grid-контейнер)  -->
+                <div class="content__guide">
+                    <div class="content__guide__wrap">
+                        <a href="#popup" class="content__guide__image">
+                            <img src="img/02-mco-landing-page-icons-shop-all.png" alt="First time here" title="С чего начать?">
+                        </a>
+                        <a href="#popup">С чего начать?</a>
+                        <p>Здесь мы расскажем, как мы работаем</p>
+                    </div>
+                    <div class="content__guide__wrap">
+                        <a href="#popup2" class="content__guide__image">
+                            <img src="img/01-mco-landing-page-icons-earn-happy-points.png" alt="Earn points" title="Накапливайте баллы">
+                        </a>
+                        <a href="#popup2">Накапливайте баллы</a>
+                        <p>Получайте баллы при каждом заказе</p>
+                    </div>
+                    <div class="content__guide__wrap">
+                        <a href="#popup3" class="content__guide__image">
+                            <img src="img/03-mco-landing-page-icons-03.png" alt="Got questions?" title="Есть вопросы?">
+                        </a>
+                        <a href="#popup3">Есть вопросы?</a>
+                        <p>Здесь Вы найдете ответы на вопросы</p>
+                    </div>
+                </div>
+                <!-- Контент Блог (grid-элемент + grid-контейнер) -->
+                <div class="content__blog">
+                    <h2><a href="news.html" class="content__blog__news__item">Блог</a></h2>
+                    <div class="content__blog__news">
+                        <div class="content__blog__news__item__1">
+                            <a href="news.html" class="content__blog__news__item">
+                                <img src="img/content__blog__news1.jpg" alt="Цветочные композиции в шляпной коробке: как ухаживать и чем они отличаются от стандартного букета">
+                                <p>Цветочные композиции в шляпной коробке: как ухаживать и чем они отличаются от стандартного букета</p>
+                                <!-- <a href="news.html"><i class="fas fa-arrow-circle-right"></i></a> -->
+                            </a>
+                        </div>
+                        <div class="content__blog__news__item__2">
+                            <a href="news.html" class="content__blog__news__item">
+                                <img src="img/content__blog__news3.jpg" alt="Букеты для мужчин">
+                                <p>Мужской букет. Дарить цветы нужно правильно. Особенно, если это касается сильного пола. </p>
+                                <!-- <a href="news.html"><i class="fas fa-arrow-circle-right"></i></a> -->
+                            </a>
+                        </div>
+                        <div class="content__blog__news__item__3">
+                            <a href="news.html" class="content__blog__news__item">
+                                <img src="img/content__blog__news2.jpg" alt="Срезанные цветы не любят перепадов температуры, поэтому перед тем, как занести в дом,
+                                    их нужно на несколько минут положить в прохладном месте">
+                                <p>Сохранить букет: советы и проверенные способы, чтобы букет простял дольше.</p>
+                                <!-- <a href="news.html"><i class="fas fa-arrow-circle-right"></i></a> -->
+                            </a>
+                        </div>
+                    </div>
+                    <a href="news.html" title="Читать все новости">Читать все новости</a>
+                </div>
+                <!-- Контент Отзывы (grid-элемент + grid-контейнер) -->
+                <div class="content__reviews">
+                    <h2><a href="reviews.html"> Отзывы о нас</a></h2>
+                    <div class="content__reviews__items">
+                        <div class="content__reviews__blocks__item">
+                            <div class="content__reviews__blocks__item__icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="content__reviews__blocks__item__text">
+                                <p>Мне нравится "Good Day", потому что их обслуживание настолько хорошее, а доставка такая быстрая, что было очень удивительно для меня и получателя. Цветы были очень красивыми, торт был восхитительным. Я бы хотела заказывать
+                                    здесь и дальше. Если вы хотите заказать что-то на День рождения или по любому другому случаю, вы можете доверять и заказывать у них</p>
+                                <p>Светлана</p>
+                            </div>
+                        </div>
+                        <div class="content__reviews__blocks__item">
+                            <div class="content__reviews__blocks__item__icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="content__reviews__blocks__item__text">
+                                <p>Я делал 9 заказов у этой компании, и они меня ни разу не разочаровали. Однажды я ввел неправильный адрес. Я написал им письмо на электронную почту, и они без проблем поменяли адрес. Их цветы и торты всегда свежие и и красивые.
+                                    Мой единственный магазин с доставкой цветов и подарков. Так держать!
+                                </p>
+                                <p>Иван</p>
+                            </div>
+                        </div>
+                        <div class="content__reviews__blocks__item">
+                            <div class="content__reviews__blocks__item__icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="content__reviews__blocks__item__text">
+                                <p>Люблю покупать и уже несколько лет отправляю цветы и подарки близким через "Good Day". Индивидуальный подход абсолютно к каждому клиенту. Однозначно стоит заказывать у этих ребят цветы. Лично мне больше всего нравится ассортимент
+                                    подарков и то, как они заворачивают цветы.</p>
+                                <p>Андрей</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Контент Подписка (блок + форма) -->
+                <div class="content__subscription">
+                    <div class="content__subscription__text">
+                        <p>МЫ ЛЮБИМ НОВЫХ ДРУЗЕЙ!</p>
+                        <p>Подпишитесь на нашу рассылку и получите скидку 8% на свой первый заказ сегодня!</p>
+                        <p>Узнавайте первыми о наших эксклюзивных предложениях, а также полезных советах и рекомендациях.
+                        </p>
+                        <form action="#" class="content__subscription__form">
+                            <div class="content__subscription__form__input">
+                                <label>Ваш адрес электронной почты:</label>
+                                <input id="emailinput" name="emailinput" type="text" placeholder="">
+                            </div>
+                            <div class="button-submit">
+                                <button class="content__subscription__button">Подписаться</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer (grid-элемент + grid-контейнер) -->
+        <footer class="footer">
+            <a href="Index.html" class="footer__logo">
+                <img src="img/logo.png" alt="Логотип Good Day">
+            </a>
+            <div class="footer__text">
+                <div class="footer__text__columns">
+                    <div class="footer__text__column__1">
+                        <ul class="column__1__list column__list">
+                            <li>УЗНАТЬ БОЛЬШЕ</li>
+                            <li><a href="address.html">Связаться с нами</a></li>
+                            <li><a href="reviews.html">Отзывы</a></li>
+                            <li><a href="#">Купоны и промо-акции</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__text__column__2">
+                        <ul class="column__2__list column__list">
+                            <li>РЕКОМЕНДАЦИИ</li>
+                            <li><a href="#">FAQS</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Условия и положения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__text__column__3 column__list">
+                        <ul class="column__3__list">
+                            <li>НАШИ КОНТАКТЫ</li>
+                            <li><a href="#"><i class="fas fa-envelope"></i>
+                                    email:
+                                    goodday@gmail.com</a></li>
+                            <li><a href="#"><i class="fas fa-mobile-alt"></i> tel:
+                                    +375291111111</a></li>
+                            <li><a href="https://www.google.ru/maps/dir//%D0%9F%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9+9,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.9086367,27.544218,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46dbcf92d3b4d975:0x1ad067aa1fa09f3b!2m2!1d27.5485954!2d53.9086305"
+                                    target="_blank"><i class="fas fa-map-marked-alt"></i> пр-т
+                                    Победителей, 9 г. Минск, Республика Беларусь 220000
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <p><a href="Index.html">GOOD DAY</a> <i class="fa fa-copyright"></i> 2021 ALL RIGHTS RESERVED
+                </p>
+            </div>
+            <div class="to__top__button">
+                <a class="to__top__button__link" href="#top" title="Вернуться наверх"><i
+                        class="fas fa-arrow-circle-up"></i></a>
+            </div>
+        </footer>
+    </div>
+    <div id="popup" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">X</a>
+                <div class="popup__title">С чего начать?</div>
+                <div class="popup__text">
+                    <p>
+                        <i class="fas fa-search"></i> Выберите цветы из нашего каталога
+                    </p>
+                    <p>
+                        <i class="fas fa-tasks"></i> Укажите детали заказа и способ доставки
+                    </p>
+                    <p>
+                        <i class="fas fa-headset"></i> Оформите заказ и дождитесь ответа менеджера
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup2" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">X</a>
+                <div class="popup__title">Накапливайте баллы</div>
+                <div class="popup__text">
+                    <p>
+                        <i class="fas fa-user-circle"></i> Зарегистрируйтесь или войдите, чтобы начать зарабатывать бонусы.
+                    </p>
+                    <p>
+                        <i class="fas fa-coins"></i> Зарабатывайте бонусы каждый раз, когда делаете покупки.
+                    </p>
+                    <p>
+                        <i class="fas fa-gifts"></i> Обменивайте бонусы на подарки или воспользуйтесь ими при следующем заказе.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup3" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">X</a>
+                <div class="popup__title">Часто задаваемые вопросы</div>
+                <div class="popup__text">
+                    <h3>Как сделать заказ?</h3>
+                    <p> Чтобы разместить заказ, перейдите в каталог, выберите продукт, заполните свое обращение и данные получателя, выберите способ оплаты, оформите заказ и все готово!
+                    </p>
+                    <h3> Хочу остаться анонимным.</h3>
+                    <p>
+                        Конечно! Ваши данные не будут указаны на карточке сообщения, если вы не указали свое имя в сообщении. Если вы хотите, чтобы ваши данные оставались конфиденциальными на случай, если получатель свяжется с нами, после написания сообщения установите флажок
+                        «Я хочу остаться анонимным».</p>
+                    <h3> Как мне внести изменения в заказ?</h3>
+                    <p>
+                        Если вам нужно изменить сообщение, адрес или дату доставки, как можно скорее свяжитесь с нами, сообщив номер вашего заказа и запрос на изменение. В зависимости от вашего заказа и статуса доставки мы свяжемся с вами, могут ли быть внесены изменения. Заказы,
+                        которые уже были подготовлены, забраны или находятся в пути, не могут быть изменены. Поэтому желательно, чтобы вы связались с нами как минимум за 24 часа до доставки вашего заказа.
+                    </p>
+                    <h3>Можно ли заказать букет с тортом?</h3>
+                    <p>Да, эта дополнительная опция будет доступна только для выбранных групп. Просто выберите букет цветов, который вы хотите добавить к торту, и добавьте его в корзину.
+                    </p>
+                    <h3>Я получил свой торт и он выглядит не так, как на фото в каталоге</h3>
+                    <p>Иногда полученный торт может отличаться от того, что было показано на сайте. Фотографии, представленные на дисплее, предназначены только для иллюстрации, поэтому примите во внимание освещение и редактирование фотографий. Кроме того,
+                        торты не будут выглядеть точно так же, поскольку все они сделаны вручную пекарями
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

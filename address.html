@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/18a1c65550.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <title>Связаться с нами</title>
+</head>
+
+<body>
+    <!-- Оболочка grid-контейнер -->
+    <div class="wrapper">
+        <!-- шапка grid-элемент -->
+        <header class="header">
+            <div class="header__container">
+                <!-- флекс -->
+                <div class="header__body">
+                    <div class="header__body__top__wrap">
+                        <a href="Index.html" class="header__logo">
+                            <img src="img/logo.png" alt="Логотип Good Day">
+                        </a>
+                        <div class="header__body__top__menu__text">
+                            <h3 class="logo__text">GOOD DAY - <br> повод порадовать близких!</h3>
+                            <a href="address.html" class="header__link__reminder"> Напомните мне про ее(его) ДР!</a>
+                        </div>
+                        <ul class="header__menu__top__contacts">
+                            <li><i class="fas fa-calendar-alt"></i>пн-вс с 8.00 до 21.00</li>
+                            <li><i class="fas fa-mobile-alt"></i> +375(29) 111-11-11</li>
+                            <li><a href="https://www.google.ru/maps/dir//%D0%9F%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9+9,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.9086367,27.544218,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46dbcf92d3b4d975:0x1ad067aa1fa09f3b!2m2!1d27.5485954!2d53.9086305"
+                                    target="_blank"><i class="fas fa-map-marked-alt"></i> пр-т
+                            Победителей, 9<br> г. Минск, 220000
+                        </a></li>
+                            <li><a href="#"><i class="fas fa-phone-alt"></i> Заказать звонок</a></li>
+                        </ul>
+                        <div class="header__body__top__menu__links">
+                            <nav class="header__menu__top">
+                                <ul class=" social_media">
+                                    <li>
+                                        <a href="https://viber.com" target="_blank" title="Мы в Viber" class="social-icon social-viber">
+                                            <i class="fab fa-viber"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://telegram.com" target="_blank" class="social-icon social-telegram" title="Мы в Telegram">
+                                            <i class="fab fa-telegram-plane"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com" target="_blank" class="social-icon social-instagram" title="Мы в Instagram">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.vk.com" target="_blank" class="social-icon social-vk" title="Мы в VK">
+                                            <i class="fab fa-vk"></i>
+                                        </a>
+                                    </li>
+                                    <li><a href="#/my-account/" class="account" title="Вход в личный кабинет"><i
+                                        class="fas fa-user"></i>
+                                </a></li>
+                                </ul>
+                            </nav>
+                            <form class="header__form__search">
+                                <input type="text" placeholder="Поиск товара">
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--  <div class="header__body__bottom__wrap"></div>  -->
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu ">
+                        <ul class="header__list">
+                            <li><a href="Index.html" class="header__link" title="Главная">Главная</a></li>
+                            <li class="dropdown__menu"><a href="Catalog.html" class="header__link" title="Каталог">Каталог</a>
+                                <ul class="dropdown__menu__submenu">
+                                    <li>
+                                        <a href="Catalog.html" title="Весь ассортимент">Весь ассортимент</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catalog_flowers.html" title="Цветы">Цветы</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catalog_gifts.html" title="Подарки">Подарки</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catalog_cakes.html" title="Торты">Торты</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="payment.html" class="header__link" title="Оплата">Оплата</a></li>
+                            <li><a href="delivery.html" class="header__link" title="Доставка">Доставка</a></li>
+                            <li><a href="reviews.html" class="header__link" title="Отзывы">Отзывы</a></li>
+                            <li><a href="news.html" class="header__link" title="Новости">Новости</a></li>
+                            <li><a href="address.html" class="header__link active__block" title="Контакты">Контакты</a></li>
+                            <li><a href="basket.html" class="header__link" title="Корзина">Корзина <!-- <i class="fas fa-cart-plus"></i> --></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Контент (grid-элемент + grid-контейнер) -->
+        <main class="main address__main">
+            <nav class="breadcrumb">
+                <ul class="breadcrumb__list">
+                    <li>
+                        <a href="Index.html" class="breadcrumb__link">Главная</a>
+                    </li>
+                    <li>
+                        <a href="address.html" class="breadcrumb__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- <h1 class="products__title">Связаться с нами</h1> -->
+            <aside class="aside__form">
+                <div class="form__wrap">
+                    <div class="form__inner">
+                        <form action="#">
+                            <fieldset>
+                                <legend>
+                                    <h3>Напомните мне про ее(его) ДР!</h3>
+                                    Мы напомним вам о будущем мероприятии за 2 дня до важной даты.
+                                </legend>
+                                <div class="form-group">
+                                    <div class="event_name">
+                                        <label class="titles_event" for="eventinput">
+                                            Название мероприятия
+                                        </label>
+                                        <input id="eventinput" name="eventinput" type="text" placeholder="Например: День Рождения мамы" class="form-control">
+                                        <i class="fas fa-birthday-cake"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="event-day">
+                                        <label class="titles_day" for="dayinput">
+                                            Дата мероприятия:
+                                        </label>
+                                        <input id="dayinput" name="dayinput" type="text" placeholder="ДД.ММ.ГГГГ" class="form-control email">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="user_name">
+                                        <label class="titles-name" for="nameinput">
+                                            Имя
+                                        </label>
+                                        <input id="nameinput" name="nameinput" type="text" placeholder="Введите Ваше имя" class="form-control">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="user_phone">
+                                        <label class="titles-phone" for="phoneinput">
+                                            Телефон
+                                        </label>
+                                        <input id="phoneinput" name="phoneinput" type="text" placeholder="Ваш номер телефона" class="form-control">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="button_submit">
+                                        <input id="submit" name="submit" value="Напомнить мне" type="submit" class="button">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+            <section class="content address__content">
+                <div class="content__map">
+
+                    <p>СХЕМА ПРОЕЗДА</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.2917336178857!2d27.54788729468298!3d53.908791641967156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf92d3b4d975%3A0x1ad067aa1fa09f3b!2z0L_RgC3Rgi4g0J_QvtCx0LXQtNC40YLQtdC70LXQuSA5LCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1616765264473!5m2!1sru!2sby"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="content__adress">
+                    <h3>НАШ АДРЕС</h3>
+                    <p>Магазин цветов и подарков &#34;Good Day&#34;</p>
+                    <p>г. Минск, пр-т Победителей, 9</p>
+                    <p> Время работы: пн-вс с 8.00 до 21.00</p>
+                    <p>Телефон: +375(29)1111111</p>
+                    <p>E-mail: goodday@gmail.com</p>
+                </div>
+                <div class="content__form">
+                    <form class="form form-feedback form-vertical">
+                        <fieldset>
+                            <legend>
+                                <h3><i class="fas fa-home"></i> Обратная связь</h3>
+                            </legend>
+                            <div class="form-group">
+                                <div class="answer-name">
+                                    <label class="titles-name" for="nameinput__form">
+                                        Имя:
+                                    </label>
+                                    <input id="nameinput__form" name="nameinput" type="text" placeholder="Введите Ваше имя" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="answer-email">
+                                    <label class="titles-email" for="emailinput">
+                                        E-mail:
+                                    </label>
+                                    <input id="emailinput" name="emailinput" type="text" placeholder="Введите адрес Вашей почты" class="form-control email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="answer-phone">
+                                    <label class="titles-phone" for="phoneinput__form">
+                                        Телефон:
+                                    </label>
+                                    <input id="phoneinput__form" name="phoneinput" type="text" placeholder="Введите номер телефона" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="answer-message">
+                                    <label class="titles-message" for="message">
+                                        Сообщение:
+                                    </label>
+                                    <textarea id="message" name="message" placeholder="Текст сообщения..." class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="button-submit">
+                                    <input id="submit__button" name="submit" value="Отправить" type="submit" class="button">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!-- Footer (grid-элемент + grid-контейнер) -->
+        <footer class="footer">
+            <a href="Index.html" class="footer__logo">
+                <img src="img/logo.png" alt="Логотип Good Day">
+            </a>
+            <div class="footer__text">
+                <div class="footer__text__columns">
+                    <div class="footer__text__column__1">
+                        <ul class="column__1__list column__list">
+                            <li>УЗНАТЬ БОЛЬШЕ</li>
+                            <li><a href="address.html">Связаться с нами</a></li>
+                            <li><a href="reviews.html">Отзывы</a></li>
+                            <li><a href="#">Купоны и промо-акции</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__text__column__2">
+                        <ul class="column__2__list column__list">
+                            <li>РЕКОМЕНДАЦИИ</li>
+                            <li><a href="#">FAQS</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Условия и положения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__text__column__3 column__list">
+                        <ul class="column__3__list">
+                            <li>НАШИ КОНТАКТЫ</li>
+                            <li><a href="#"><i class="fas fa-envelope"></i>
+                                    email:
+                                    goodday@gmail.com</a></li>
+                            <li><a href="#"><i class="fas fa-mobile-alt"></i> tel:
+                                    +375291111111</a></li>
+                            <li><a href="https://www.google.ru/maps/dir//%D0%9F%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9+9,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.9086367,27.544218,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46dbcf92d3b4d975:0x1ad067aa1fa09f3b!2m2!1d27.5485954!2d53.9086305"
+                                    target="_blank"><i class="fas fa-map-marked-alt"></i> пр-т
+                                    Победителей, 9 г. Минск, Республика Беларусь 220000
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <p><a href="Index.html">GOOD DAY</a> <i class="fa fa-copyright"></i> 2021 ALL RIGHTS RESERVED
+                </p>
+            </div>
+            <div class="to__top__button">
+                <a class="to__top__button__link" href="#top" title="Вернуться наверх"><i
+                        class="fas fa-arrow-circle-up"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
